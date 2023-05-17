@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 
 //import pages
@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import CreateBlog from './pages/CreateBlog';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
+import About from './pages/About';
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
           path='/admin'
           element={<Admin/>}
         />
+        <Route
+          path='/about'
+          element={<About/>}
+        />
+        <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       </div>
     </div>

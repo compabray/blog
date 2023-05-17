@@ -55,9 +55,7 @@ function SingleBlog() {
                 <span className="text-gray-700">Published on: </span>
                 <span className="text-yellow-600">{formDate(data.createdAt)}</span>
             </p>
-            <p className="text-gray-800 text-sm  mt-3">
-                {data.introduccion}
-            </p>
+            <p className="text-gray-800 text-sm  mt-3"  dangerouslySetInnerHTML={{ __html: data.introduccion }}/>
             </div>
 
             <div>

@@ -23,12 +23,12 @@ function Navbar() {
             </div>
             <div className={`flex flex-col absolute top-0 right-0 left-0 h-screen bg-items-center justify-center text-center bg-gray-50 text-xl md:hidden ${click ? 'nav' : 'navB'}`}>
                 <a href="/" className="p-4 hover:text-yellow-600 duration-200">Home</a>
-                <a href="/" className="p-4 hover:text-yellow-600 duration-200">About</a>
+                <a href="/about" className="p-4 hover:text-yellow-600 duration-200">About</a>
                 <a href="/" className="p-4 hover:text-yellow-600 duration-200">Contact</a>
             </div>
             <div className="pr-8 md:block hidden">
                 <a href="/" className="p-4 hover:text-yellow-600 duration-200">Home</a>
-                <a href="/" className="p-4 hover:text-yellow-600 duration-200">About</a>
+                <a href="/about" className="p-4 hover:text-yellow-600 duration-200">About</a>
                 <a href="/" className="p-4 hover:text-yellow-600 duration-200">Contact</a>
             </div>
         </nav>
