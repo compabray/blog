@@ -112,6 +112,16 @@ function CreateBlog() {
         setThumbnail(e.target.files[0])
     }   
 
+    const handleCopy = () => {
+        const textToCopy = "<br/> <br/>";
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            console.log('Text copied to clipboard');
+          })
+          .catch((error) => {
+            console.error('Failed to copy text:', error);
+          });
+      };
 
 
   return (
@@ -201,6 +211,13 @@ function CreateBlog() {
                                 className="bg-green-500 w-1/4 text-white p-2 rounded"
                             >
                                 Agregar
+                            </button>
+                            <button 
+                                type="button"
+                                onClick={handleCopy}
+                                className="bg-yellow-500 w-1/4 text-white p-2 rounded"
+                            >
+                                Copiar break
                             </button>
                             <button
                             type="submit"
